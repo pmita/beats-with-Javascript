@@ -1,1 +1,149 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-track,
+.snare-track,
+.hihat-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin-top: 5rem;
+}
+
+.kick-track .controls,
+.snare-track .controls,
+.hihat-track .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0rem 2rem;
+}
+
+.kick-track .controls button,
+.snare-track .controls button,
+.hihat-track .controls button {
+  padding: 1rem;
+  border: none;
+  background: #585858;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kick .pad,
+.snare .pad,
+.hihat .pad {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.kick-pad {
+  background: #5ed3db;
+}
+
+.kick-pad.active {
+  background: #09929c;
+}
+
+.snare-pad {
+  background: #8e5edb;
+}
+
+.snare-pad.active {
+  background: #4308a1;
+}
+
+.hihat-pad {
+  background: #e4c665;
+}
+
+.hihat-pad.active {
+  background: #a3800e;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #585858;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
