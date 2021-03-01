@@ -92,6 +92,16 @@ svg {
   transition: all 0.5s ease;
 }
 
+.kick-track .controls button.active,
+.snare-track .controls button.active,
+.hihat-track .controls button.active {
+  background: silver;
+}
+
+.mute-active {
+  color: red !important;
+}
+
 .kick,
 .snare,
 .hihat {
@@ -145,6 +155,29 @@ select {
   border: none;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.tempo-slider {
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #505050;
+  color: white;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 @-webkit-keyframes playTrack {

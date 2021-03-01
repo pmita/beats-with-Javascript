@@ -46,6 +46,9 @@ $orange-active : rgb(163, 128, 14);
             font-size: 1rem;
             cursor: pointer;
             transition: all 0.5s ease;
+            &.active{
+                background: rgb(192, 192, 192);
+            }
         }
     }
 }
@@ -100,9 +103,28 @@ select{
     margin-top: 3rem;
 }
 
-.active{
-    background: rgb(189, 30, 30);
+.tempo{
+    margin: 3rem;
+    width: 30%;
+    p{
+        font-size: 1.5rem;
+        margin: 2rem;
+        text-align: center;
+    }
 }
+
+.tempo-slider{
+    padding: 0.5rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(80,80,80);
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
 
 @keyframes playTrack{
     from{
