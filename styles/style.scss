@@ -50,6 +50,10 @@ $orange-active : rgb(163, 128, 14);
     }
 }
 
+.mute-active{
+    color: red !important;
+}
+
 .kick,
 .snare,
 .hihat{
@@ -94,6 +98,10 @@ select{
     border: none;
     cursor: pointer;
     margin-top: 3rem;
+}
+
+.active{
+    background: rgb(189, 30, 30);
 }
 
 @keyframes playTrack{
